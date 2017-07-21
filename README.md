@@ -2,10 +2,10 @@
 > Some common and advance useful GIT command
 
 ### Upload a new repositary
-```
+```bash
 $ echo # ASDf >> README.md
 $ git init
-$ git add README.md / . for all
+$ git add README.md # . for all
 $ git commit -m "Initial commit"
 $ git remote add origin https://github.com/arif2009/ASDf.git
 $ git push -u origin master

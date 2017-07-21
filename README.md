@@ -22,25 +22,26 @@ $ touch .gitignore
 $ git add .gitignore
 $ git commit -m "add .gitignore file"
 ```
-### To change the origin:		
-```
+### Origin
+```bash
+# To show the origin
+$ git remote -v
+
+# To change the origin
 $ git remote set-url origin git@github.com:arif2009/OnlineRegistrationSystem.git
 ```
 ```
 --soft indicates that the uncommitted files should be retained as working files opposed to 
 --hard which would discard them.
 ```
-
 ### Clear cmd 
 ```bash
 -> press q 
 #OR 
 $ clear
 ```
-
 ### Help
 > -h for command help. Ex- $ git log -h
-
 ### To show the git history/log
 ```bash
 $ git log		
@@ -52,14 +53,19 @@ $ git log --oneline
 $ git show # Show the last commit
 $ gitk # Show the log of all user changes
 $ git diff # show the local changes
-$ git log --all --grep='company name must be bigger' # Search the commit log (across all branches) for the given text
+$ git log --graph or gitk. # Both also accept --all, which will show all the branches instead of just the current one.
+$ git log --all --grep='company name must be bigger' # Search the commit log (across all branches) for the given text.
+$ git shortlog -s -n
+$ gitk --follow [filename] # --follow : Continue listing the history of a file beyond renames (works only for a single file).
 ```
-
+### Show the git command history
+```bash
+$ history # http://stackoverflow.com/a/14417188
+```
 ### Show the current branch with status
 ```
 $ git status
 ```
-
 ### Fetch from and integrate with another repository or a local branch
 ```bash
 $ git pull
@@ -70,12 +76,10 @@ $ pull origin master
 ```
 $ git add fiename
 ```
-
 ### Commit(Save state. It save locally. You can create save state as much as you can)
 ```bash
 $ git commit -m "Message" # -a for all
 ```
-
 ### To Push
 ```
 $ git push origin BranchNameToPush
@@ -84,17 +88,21 @@ $ git push origin BranchNameToPush
 ```
 $ git push origin NewBranch
 ```
-
-### Combines the specified branch’s history into the current branch
-```
+### Git Merge
+```bash
+# Combines the specified branch’s history into the current branch
 $ git merge BranchName
-```
 
+# How do I merge a version of a single file from one git branch to another?
+$ git diff --stat myBranch # show the difference file between current branch to myBranch branch
+$ git checkout --merge develop target.txt 
+#merge target.txt from develop. Ex : $ git checkout --merge develop Web/Scripts/options/options.routing.js
+$ git diff --stat myBranch # now you dont see the merged file (target.txt) in the file difference.
+```
 ### Whene conflict use this to resolve
 ```
 $ git mergetool
 ```
-
 ### To show a file in command prompt
 ```bash
 $ cat FileName
@@ -165,7 +173,6 @@ $ git branch -r # Remote branch
 $ git branch -a | grep 'search keyword' # Search branch
 $ git for-each-ref --format='%(committerdate:short),%(authorname),%(refname:short)' --sort=committerdate refs/heads/ | column -t -s ',' # show branch with date
 ```
-
 ### Save to move another branch immediately
 ```
 $ git stash # Save something to move another branch
@@ -192,14 +199,12 @@ https://youruser:password@github.com/user/repo.git
 ```
 $ git config --list
 ```
-
 ### If .gitIgnor gile not working
 ```
 $ git rm -r --cached .
 $ git add .
 $ git commit -m "Fixed untracked files"
 ```
-
 ### Show the difference
 ```bash
 # To see a list of which commits are on one branch but not another, use git log
@@ -226,7 +231,6 @@ $ git cherry -v develop mybranch
 ```
 $ git commit --amend		
 ```
-
 ### Add Email and UserName
 ```
 $ git config user.email "arifur.rahman@bs-23.com"		
@@ -236,7 +240,7 @@ $ git config user.name "Arif"
 ```bash
 $ git show <revhash>
 $ gitk <revhash>
-$ git show --pretty="" --name-only <revhash> # [It will show only name](http://stackoverflow.com/a/424142/3835843)
+$ git show --pretty="" --name-only <revhash> # It will show only name http://stackoverflow.com/a/424142/3835843)
 ```
 ### TAG
 ```bash
@@ -250,25 +254,6 @@ $ git push --tags # push tags to remote
 $ git tag -n9 or git tag -l -n9 #it will list all the tags along with annotations & 9 lines of message for every tag
 $ git tag -l -n9 v3.* # will only display tags starting with "v3."
 ```
-
-$ git log --graph or gitk. # Both also accept --all, which will show all the branches instead of just the current one.
-
-$ git shortlog -s -n
-
-How do I merge a version of a single file from one git branch to another?
-$ git diff --stat myBranch [show the difference file between current branch to myBranch branch]
-$ git checkout --merge develop target.txt [merge target.txt from develop. Ex : $ git checkout --merge develop WebCruiter.Candidate.Web/Scripts/options/options.routing.js]
-$ git diff --stat myBranch [now you dont see the merged file (target.txt) in the file difference]
-
-Show the git command history :
-$ history
-http://stackoverflow.com/a/14417188
-
-$ gitk --follow [filename]
-[--follow : Continue listing the history of a file beyond renames (works only for a single file).]
-
-$ git remote -v [To show the origin]
-
 > GIT SCM https://git-scm.com/download/win
 > GitGuys http://www.gitguys.com
 

@@ -10,18 +10,6 @@ $ git commit -m "Initial commit"
 $ git remote add origin https://github.com/arif2009/ASDf.git
 $ git push -u origin master
 ```
-### Add .gitignore file 
-```bash
-# Using Command Prompt
-> cd E:\Documents(Programming)\Asp.Net\AspMvcPractice
-> ren .gitignore.txt .gitignore
-
-#OR
-$ touch .gitignore
-
-$ git add .gitignore
-$ git commit -m "add .gitignore file"
-```
 ### Origin
 ```bash
 # To show the origin
@@ -40,8 +28,6 @@ $ git remote set-url origin git@github.com:arif2009/OnlineRegistrationSystem.git
 #OR 
 $ clear
 ```
-### Help
-> -h for command help. Ex- $ git log -h
 ### To show the git history/log
 ```bash
 $ git log		
@@ -190,20 +176,31 @@ $ git push origin master
 ```
 $ git rm -r --cached myFolder
 ```
-### Push using different Account
-```
+### Some configuration settings
+```bash
+#Add .gitignore file
+
+# Using Command Prompt
+> cd E:\Documents(Programming)\Asp.Net\AspMvcPractice
+> ren .gitignore.txt .gitignore
+
+#OR
+$ touch .gitignore
+
+$ git add .gitignore
+$ git commit -m "add .gitignore file"
+
+# Push using different Account
 change URL in .git/config file
 https://youruser:password@github.com/user/repo.git
-```
-### Show the author Info
-```
+
+# Show the author Info
 $ git config --list
 ```
-### If .gitIgnor gile not working
+### Add Email and UserName
 ```
-$ git rm -r --cached .
-$ git add .
-$ git commit -m "Fixed untracked files"
+$ git config user.email "arifur.rahman@bs-23.com"		
+$ git config user.name "Arif"
 ```
 ### Show the difference
 ```bash
@@ -231,11 +228,6 @@ $ git cherry -v develop mybranch
 ```
 $ git commit --amend		
 ```
-### Add Email and UserName
-```
-$ git config user.email "arifur.rahman@bs-23.com"		
-$ git config user.name "Arif"
-```
 ### View a specific Git commit
 ```bash
 $ git show <revhash>
@@ -254,9 +246,16 @@ $ git push --tags # push tags to remote
 $ git tag -n9 or git tag -l -n9 #it will list all the tags along with annotations & 9 lines of message for every tag
 $ git tag -l -n9 v3.* # will only display tags starting with "v3."
 ```
-> GIT SCM https://git-scm.com/download/win
-> GitGuys http://www.gitguys.com
-
-> Github Markdown Cheatsheet https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-
-> Generate SSH Key https://github.com/shibbir/notebook#generate-ssh-key
+### Troubleshooting
+```bash
+# If .gitIgnor gile not working
+$ git rm -r --cached .
+$ git add .
+$ git commit -m "Fixed untracked files"
+```
+### Help
+> -h for command help. Ex- $ git log -h  
+> GIT SCM https://git-scm.com/download/win  
+> GitGuys http://www.gitguys.com  
+> Github Markdown Cheatsheet https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet  
+> Generate SSH Key https://github.com/shibbir/notebook#generate-ssh-key  

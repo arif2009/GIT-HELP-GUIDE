@@ -259,3 +259,6 @@ $ git commit -m "Fixed untracked files"
 > GitGuys http://www.gitguys.com  
 > Github Markdown Cheatsheet https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet  
 > Generate SSH Key https://github.com/shibbir/notebook#generate-ssh-key  
+
+##### License
+<a href="https://opensource.org/licenses/MIT">The MIT License</a> Copyright &copy; 2017 Arifur Rahman

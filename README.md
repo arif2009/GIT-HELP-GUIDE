@@ -176,10 +176,8 @@ $ git push origin master
 ```
 $ git rm -r --cached myFolder
 ```
-### Some configuration settings
+### Add .gitignore file
 ```bash
-#Add .gitignore file
-
 # Using Command Prompt
 > cd E:\Documents(Programming)\Asp.Net\AspMvcPractice
 > ren .gitignore.txt .gitignore
@@ -189,16 +187,18 @@ $ touch .gitignore
 
 $ git add .gitignore
 $ git commit -m "add .gitignore file"
-
-# Push using different Account
-change URL in .git/config file
-https://youruser:password@github.com/user/repo.git
-
+```
+#### Push using different Account
+```bash
+# change URL in .git/config file
+# https://youruser:password@github.com/user/repo.git
+```
+### Configuration
+```bash
 # Show the author Info
 $ git config --list
-```
-### Add Email and UserName
-```
+
+# Add Email and UserName
 $ git config user.email "arifur.rahman@bs-23.com"		
 $ git config user.name "Arif"
 ```

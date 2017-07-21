@@ -18,10 +18,6 @@ $ git remote -v
 # To change the origin
 $ git remote set-url origin git@github.com:arif2009/OnlineRegistrationSystem.git
 ```
-```
---soft indicates that the uncommitted files should be retained as working files opposed to 
---hard which would discard them.
-```
 ### Clear cmd 
 ```bash
 -> press q 
@@ -201,6 +197,9 @@ $ git config --list
 # Add Email and UserName
 $ git config user.email "arifur.rahman@bs-23.com"		
 $ git config user.name "Arif"
+
+# --soft indicates that the uncommitted files should be retained as working files opposed to 
+# --hard which would discard them.
 ```
 ### Show the difference
 ```bash

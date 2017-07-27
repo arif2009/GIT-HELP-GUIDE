@@ -156,7 +156,7 @@ $ git branch -a | grep 'search keyword' # Search branch
 $ git for-each-ref --format='%(committerdate:short),%(authorname),%(refname:short)' --sort=committerdate refs/heads/ | column -t -s ',' # show branch with date
 ```
 ### Save to move another branch immediately
-```
+```bash
 $ git stash # Save something to move another branch
 $ git stash apply
 $ git stash pop = git stash apply && git stash drop

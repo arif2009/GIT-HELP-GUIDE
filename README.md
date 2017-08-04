@@ -2,10 +2,10 @@
 > Some common and advance useful GIT command
 
 ### Upload a new repositary
-```
+```bash
 $ echo # ASDf >> README.md
 $ git init
-$ git add README.md / . for all
+$ git add README.md # . for all
 $ git commit -m "Initial commit"
 $ git remote add origin https://github.com/arif2009/ASDf.git
 $ git push -u origin master
@@ -156,7 +156,7 @@ $ git branch -a | grep 'search keyword' # Search branch
 $ git for-each-ref --format='%(committerdate:short),%(authorname),%(refname:short)' --sort=committerdate refs/heads/ | column -t -s ',' # show branch with date
 ```
 ### Save to move another branch immediately
-```
+```bash
 $ git stash # Save something to move another branch
 $ git stash apply
 $ git stash pop = git stash apply && git stash drop

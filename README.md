@@ -195,7 +195,7 @@ $ git commit -m "add .gitignore file"
 $ git config --list
 
 # Add Email and UserName
-$ git config user.email "arifur.rahman@bs-23.com"		
+$ git config user.email "arif.rahman2009@gmail.com"		
 $ git config user.name "Arif"
 
 # --soft indicates that the uncommitted files should be retained as working files opposed to 

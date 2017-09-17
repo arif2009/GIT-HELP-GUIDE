@@ -52,6 +52,7 @@ $ git status
 ```bash
 $ git pull
 $ pull origin master
+$ git pull origin master --allow-unrelated-histories # If you change git origin
 # Note: $ git pull = $ git fetch + $ git merge
 ```
 ### To add file

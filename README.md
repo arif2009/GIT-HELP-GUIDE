@@ -230,10 +230,10 @@ $ git commit --amend
 ```
 ### Unstage
 ```bash
-# Unstages the file in the current commit
+# Unstages the file in the current commit.
 $ git reset <file> # Example : git reset <viewmodel.js>
 
-# unstage the file for future commits also. It's unstaged untill it gets added again with "$git add <file>"
+# Unstages the file for future commits also. It's unstaged untill it gets added again with "$git add <file>".
 $ git rm --cached <file> # Example : git rm --cached <viewmodel.js>
 ```
 ### View a specific Git commit

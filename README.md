@@ -202,6 +202,10 @@ $ git config user.name "Arif"
 # --soft indicates that the uncommitted files should be retained as working files opposed to 
 # --hard which would discard them.
 ```
+### To see which config is set where
+```
+$ git config --list --show-origin
+```
 ### Show the difference
 ```bash
 # To see a list of which commits are on one branch but not another, use git log

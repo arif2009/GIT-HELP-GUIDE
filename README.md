@@ -39,6 +39,7 @@ $ git log --graph or gitk. # Both also accept --all, which will show all the bra
 $ git log --all --grep='company name must be bigger' # Search the commit log (across all branches) for the given text.
 $ git shortlog -s -n
 $ gitk --follow [filename] # --follow : Continue listing the history of a file beyond renames (works only for a single file).
+$ git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' | sort -k5n -k2M -k3n -k4n # List Remote Git Branches By Author
 ```
 ### Show the git command history
 ```bash

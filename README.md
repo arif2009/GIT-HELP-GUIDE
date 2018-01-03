@@ -228,6 +228,8 @@ $ git log origin/BranchName..BranchName
 $ git cherry -v develop mybranch
 # This would show all of the commits which are contained within mybranch but NOT in develop.
 # if you leave off the last option (mybranch), it will compare the current branch instead.
+
+$ git diff # show uncommitted changes
 ```
 ### Amending the most recent commit message		
 ```

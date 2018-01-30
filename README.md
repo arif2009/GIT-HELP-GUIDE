@@ -7,7 +7,7 @@ $ echo # ASDf >> README.md
 $ git init
 $ git add README.md # . for all
 $ git commit -m "Initial commit"
-$ git remote add origin https://github.com/arif2009/ASDf.git
+$ git remote add origin https://github.com/arif2009/GIT-HELP-GUIDE.git
 $ git push -u origin master
 ```
 ### Origin

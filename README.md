@@ -43,7 +43,7 @@ $ git for-each-ref --format='%(committerdate) %09 %(authorname) %09 %(refname)' 
 ```
 ### Show the git command history
 ```bash
-$ history # http://stackoverflow.com/a/14417188
+$ history # [http://stackoverflow.com/a/14417188](http://stackoverflow.com/a/14417188)
 ```
 ### Show the current branch with status
 ```

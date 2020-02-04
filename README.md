@@ -1,6 +1,15 @@
 ## GIT HELP GUIDE
 > Some common and advance useful GIT command
 
+### Clone a git repository
+```bash
+$ git clone RepositoryAddress
+Ex.
+$ git clone https://github.com/arif2009/AspMvcPractice.git
+
+# If it prints a file path, look at the contents of that file for further information. That files also ignored
+$ git config core.excludesfile
+```
 ### Upload a new repositary
 ```bash
 $ echo # ASDf >> README.md
@@ -83,6 +92,15 @@ $ git checkout --merge develop target.txt
 #merge target.txt from develop. Ex : $ git checkout --merge develop Web/Scripts/options/options.routing.js
 $ git diff --stat myBranch # now you dont see the merged file (target.txt) in the file difference.
 ```
+### cherry-picking a commit
+```bash
+# Cherry picking in Git means to choose a commit from one branch and apply it onto another.
+
+# Step-1: Make sure you are on the branch you want to apply the commit to.
+$ git checkout master
+# Step-2: Execute the following:
+$ git cherry-pick <commit-hash>
+```
 ### Whene conflict use this to resolve
 ```
 $ git mergetool
@@ -140,15 +158,6 @@ $ git reset --hard 055c61b
 # Then to push remote forcefully 
 $ git push Origin BranchName -f
 ```
-### Clone a git repository :
-```bash
-$ git clone RepositoryAddress
-Ex.
-$ git clone https://github.com/arif2009/AspMvcPractice.git
-
-# If it prints a file path, look at the contents of that file for further information. That files also ignored
-$ git config core.excludesfile
-```
 ### To show branch’s
 ```bash
 $ git branch -a # All branch
@@ -161,7 +170,7 @@ $ git for-each-ref --format='%(committerdate:short),%(authorname),%(refname:shor
 ```bash
 $ git stash # Save something to move another branch
 $ git stash apply
-$ git stash pop = git stash apply && git stash drop
+$ git stash pop # git stash pop = git stash apply && git stash drop
 $ git stash list # Show all list of stash
 ```
 ### Remove directory from git and local

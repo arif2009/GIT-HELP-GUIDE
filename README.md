@@ -183,6 +183,11 @@ $ git push origin master
 ```
 $ git rm -r --cached myFolder
 ```
+### Case sensitive rename—eg. from casesensitive to CaseSensitive—you must use a two step:
+```
+git mv casesensitive tmp
+git mv tmp CaseSensitive
+```
 ### Add .gitignore file
 ```bash
 # Using Command Prompt

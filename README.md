@@ -210,6 +210,9 @@ $ git commit -m "add .gitignore file"
 # Show the author Info
 $ git config --list
 
+# Show different config (global, user, repo, etc...)
+git config --list --global
+
 # Add Email and UserName
 $ git config user.email "arif.rahman2009@gmail.com"		
 $ git config user.name "Arif"
